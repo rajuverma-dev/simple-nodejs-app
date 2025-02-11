@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"  // Adding build step here
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,9 @@
     "nodemon": "^2.0.20",
     "request": "^2.88.2",
     "wiki-infobox-parser": "^0.1.11"
+  },
+  "devDependencies": {
+    "webpack": "^5.0.0",  // You will need webpack if you're going this route
+    "webpack-cli": "^4.0.0"
   }
 }
